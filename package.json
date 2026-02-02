@@ -1,0 +1,37 @@
+{
+  "name": "screen-store",
+  "version": "0.1.0",
+  "description": "Shared screen state utilities for React and React Native backed by Redux.",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "redux",
+    "state",
+    "screen"
+  ],
+  "author": "",
+  "peerDependencies": {
+    "react": ">=16.8.0 <20.0.0",
+    "react-redux": ">=7.0.0 <10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/react": "^18.0.0",
+    "@types/react-redux": "^7.1.0"
+  }
+}
